@@ -1,0 +1,94 @@
+.navbar-default{
+	height: 80px;
+	background-color: #2d3e50;
+	margin-bottom: 0;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+}.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-brand:hover{
+    color: #18bb9c;
+}
+ul.nav.navbar-nav.navbar-right {
+    padding-top: 15px;
+}
+a.navbar-brand {
+	padding-top: 30px;
+	font-size: 20px;
+	text-transform: uppercase;
+	
+}
+.navbar-default .navbar-brand {
+    color: white;
+}
+.bg-blue{
+	padding:90px 0 113px 0;
+	background-color: #18bb9c;
+}
+.bg-blue h1{
+	font-size: 52px;
+	color: white;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.star{
+
+	width: 20%;
+	margin:auto;
+	border-top:4px solid white;
+}
+.star i{
+	background-color: #18bb9c;
+	width: 51px;
+	height: 40px;
+	position: relative;
+	font-size: 40px;
+	color: white;
+	top: -23px;
+}
+.bg-blue p{
+	color: #f39c12;
+    font-size: 51px;
+}
+.content .img-res{
+	width: 100%;
+}
+.logo-category{
+	position: relative;
+	margin-top: 10px
+}
+.hover-content{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	top:0px;
+	left: 0px;
+	background-color: rgba(46, 204, 113, 0.7);
+	opacity: 0;
+	transition: all 0.7s;
+}
+.hover-content p{
+	font-size: 32px;
+	color: white;
+	padding-top: 100px
+}
+.logo-category:hover .hover-content{
+	opacity: 1;
+	cursor: pointer;
+}
+ul.nav.navbar-nav.navbar-right{
+	background-color: #2d3e50;
+}
+#map {
+        height: calc(100vh - 80px);
+      }
+footer{
+	background-color: #2d3e50;
+	color: white;
+	text-align: center;
+}
