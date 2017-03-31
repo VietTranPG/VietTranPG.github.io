@@ -1,58 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-	<title>Test</title>
-	 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlzR2dS4jsoZRSHN5ynjjAIIC5MogCkQ4"
-    async defer></script>
-	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>	
-	<script type="text/javascript" src="js/map.js"></script>	
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-	<nav class="navbar navbar-default" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>				
-				<a class="navbar-brand" href="#">Sạc Xe</a>
-			</div>
-			<div class="collapse navbar-collapse navbar-ex1-collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Bản đồ</a></li>
-					<li><a href="#">Thống Kê</a></li>
-					<!-- <li><a href="#">Sign In</a></li> -->
-				</ul>				
-			</div><!-- /.navbar-collapse -->
-		</div>
-	</nav>
-	<div class="content">
-	<div id="map"></div>
-	</div>	
-	<footer>
-		<div class="footer1">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-						<h3>Minh Kiên</h3>
-						<p>DH3C2</p>
-					</div>
+  <meta charset="utf-8">
+  <title>Ng2Firebase</title>
+  <base href="/">
 
-					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-						<h3>Đồ Án Tốt Nghiệp</h3>
-						<p>2013-2017</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-</body>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link href="styles.d41d8cd98f00b204e980.bundle.css" rel="stylesheet"/></head>
+<body>
+  <app-root>Loading...</app-root>
+
+<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAsKC_HPVPzlOTvkjr30jsvB-StqXL10Ko",
+    authDomain: "firstng2firebaseapp.firebaseapp.com",
+    databaseURL: "https://firstng2firebaseapp.firebaseio.com",
+    storageBucket: "firstng2firebaseapp.appspot.com",
+    messagingSenderId: "672410979516"
+  };
+  firebase.initializeApp(config);
+  var root = firebase.database().ref();
+  root.on('value',function (snapshot) {
+  	console.log(snapshot.val()); 
+  })
+</script>
+<script type="text/javascript" src="inline.e546d4ee2e83f9a68f09.bundle.js"></script><script type="text/javascript" src="polyfills.065743a2119453ccd431.bundle.js"></script><script type="text/javascript" src="vendor.0fe743747f6ab514d31f.bundle.js"></script><script type="text/javascript" src="main.234068fc49737041ef05.bundle.js"></script></body>
 </html>
