@@ -1,31 +1,60 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Ng2Firebase</title>
   <base href="/">
-
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>DOC & I</title>
+  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link href="styles.d41d8cd98f00b204e980.bundle.css" rel="stylesheet"/></head>
-<body>
-  <app-root>Loading...</app-root>
+  <link rel="icon" href="assets/favicon/favicon-PROD.ico" type="image/x-icon">
 
-<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyAsKC_HPVPzlOTvkjr30jsvB-StqXL10Ko",
-    authDomain: "firstng2firebaseapp.firebaseapp.com",
-    databaseURL: "https://firstng2firebaseapp.firebaseio.com",
-    storageBucket: "firstng2firebaseapp.appspot.com",
-    messagingSenderId: "672410979516"
-  };
-  firebase.initializeApp(config);
-  var root = firebase.database().ref();
-  root.on('value',function (snapshot) {
-  	console.log(snapshot.val()); 
-  })
-</script>
-<script type="text/javascript" src="inline.e546d4ee2e83f9a68f09.bundle.js"></script><script type="text/javascript" src="polyfills.065743a2119453ccd431.bundle.js"></script><script type="text/javascript" src="vendor.0fe743747f6ab514d31f.bundle.js"></script><script type="text/javascript" src="main.234068fc49737041ef05.bundle.js"></script></body>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600">
+
+
+  <!-- inject:css -->
+
+  <link rel="stylesheet" href="/css/main.css?1486699999589">
+
+  <!-- endinject -->
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/styles/app.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/home.component.css">
+<link rel="stylesheet" href="css/savingcard.css">
+<link rel="stylesheet" href="css/analysis.css">
+<link rel="stylesheet" href="css/docandi-update.css">
+<link rel="stylesheet" href="css/homeoverview.css">
+<link rel="stylesheet" href="css/admin.css">
+<script src="https://cdn.ckeditor.com/4.5.11/full/ckeditor.js"></script>
+</head>
+<body>
+
+  <sd-app><div class="spinner"></div></sd-app>
+
+  <script>
+  // Fixes undefined module function in SystemJS bundle
+  function module() {}
+  </script>
+
+  <!-- shims:js -->
+  <!-- endinject -->
+
+  
+
+  <!-- libs:js -->
+  <!-- endinject -->
+
+  <!-- inject:js -->
+  <script src="/js/shims.js?1486699999589"></script>
+  <script src="/js/app.js?1486699999589"></script>
+  <!-- endinject -->
+
+  
+
+
+</body>
 </html>
