@@ -1,0 +1,181 @@
+body {
+    display: none;
+    background: #9fddea url(../img/bg-bottom.png) bottom center no-repeat;
+    background-size: contain;
+    font-family: 'Marck Script', bold;
+    font-size: 18px;
+}
+
+.myPrev{
+    left:270px;
+}
+.myNext{
+    left:890px;
+}
+
+.myPrev, .myNext {
+    position: absolute;
+    width: 100px;
+    height: 550px;
+    top: 2955px;
+    z-index: 999;
+}
+
+#cakes {
+    position: absolute;
+    top: 3500px;
+    left: 50px;
+    width: 547px;
+    height: 273px;
+    background: url(../img/cakes.png) 0px 0px no-repeat;
+    z-index: 9999;
+}
+
+#balloons {
+    position: absolute;
+    top: 1150px;
+    left: 70px;
+    width: 261px;
+    height: 451px;
+    background: url(../img/balloons.png) 0px 0px no-repeat;
+    z-index: 9999;
+}
+
+#clouds {
+    position: absolute;
+    width: 100%;
+    height: 4700px;
+    background: transparent url(../img/clouds.png) 0 0px repeat-x;
+    top: 0px;
+    left: 0px;
+    z-index: -99;
+}
+#spouses {
+    position: relative;
+    top: 20px;
+    right: 0px;
+    width: 423px;
+    height: 611px;
+    background: url(../img/spouses.png) right bottom no-repeat;
+    z-index: 100;
+}
+#plane {
+    position: relative;
+    top: 150px;
+    left: 75px;
+    width: 100%;
+    height: 450px;
+    background: url(../img/plane.png) 0px 0px no-repeat;
+    z-index: 100;
+}
+
+img.decor {
+    position: relative;
+    display: block;
+    left:-200px;
+    overflow: hidden;
+}
+
+.carusel{
+    position: absolute;
+    height: 400px;
+    width: 500px;
+    top: 3040px;
+    left:380px;
+    z-index: 9999;
+}
+.fotorama {
+    position: absolute;
+}
+
+#scene, #scene2, #scene3, #scene4{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#scene4 {
+    margin-bottom: 300px;
+}
+
+#guestsNote{
+    position: absolute;
+    top: 440px;
+    left: 405px;
+    z-index: 201;
+}
+
+#programNote {
+    position: absolute;
+    top: 450px;
+    left: 350px;
+    z-index: 201;
+}
+
+#photoNote {
+    position: absolute;
+    top: 450px;
+    left: 340px;
+    z-index: 201;
+}
+
+#contactNote {
+    position: absolute;
+    top: 450px;
+    left: 400px;
+    z-index: 201;
+
+}
+
+#remote-rope {
+    display: none;
+    position: absolute;
+    top: 500px;
+    left: 410px;
+    width: 20px;
+    height: 0px;
+    z-index: 50;
+    background: url(../img/rope-remote.png) 0px 0px repeat-y;
+}
+
+.remote{
+    display: none;
+    position: absolute;
+    top: 500px;
+    left: 350px;
+    width: 141px;
+    height: 272px;
+    z-index: 1000;
+}
+
+.remoteOffOff{
+    background: url(../img/remote/remoteOffOff.png) 0px 0px no-repeat;
+}
+
+.remoteOnOff{
+    background: url(../img/remote/remoteOnOff.png) 0px 0px no-repeat;
+}
+
+.remoteOffOn{
+    background: url(../img/remote/remoteOffOn.png) 0px 0px no-repeat;
+}
+
+#remoteUp {
+    height: 160px;
+    position: relative;
+}
+#remoteDown {
+    height: 112px;
+    position: relative;
+}
+
+.psycho {
+    position: relative;
+}
+
+p {
+    text-align: center;
+}
+div.last {
+    padding-top: 150px;
+}

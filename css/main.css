@@ -1,0 +1,298 @@
+body {
+    /*cloak workaround*/
+    display: none;
+    background: #9fddea url(../img/bg-bottom.png) bottom center no-repeat;
+    background-size: contain;
+    font-family: 'Marck Script', bold;
+    font-size: 18px;
+}
+
+#spouses-container {
+    display: inline-block;
+    position: relative;
+}
+
+#plane-container {
+    display: inline-block;
+    height: 600px;
+}
+
+#spouses {
+    position: relative;
+    width: 423px;
+    height: 611px;
+    background: url(../img/spouses.png) right bottom no-repeat;
+    z-index: 100;
+}
+#plane {
+    position: relative;
+    top: 150px;
+    width: 440px;
+    height: 450px;
+    background: url(../img/plane.png) center bottom no-repeat;
+    z-index: 100;
+}
+
+
+@media all and (min-width: 800px) {
+    #spouses-container {
+        padding-right: 100px;
+    }
+
+    #remote-rope {
+        left: 850px;
+    }
+
+    .remote{
+        left: 790px;
+    }
+
+    img.decor {
+        left:-380px;
+    }
+    #guestsNote{
+        left: 240px;
+    }
+
+    #programNote {
+        left: 200px;
+    }
+
+    #photoNote {
+        left: 160px;
+    }
+    .carusel{
+        left: 200px;
+    }
+
+    .myPrev{
+        left:100px;
+    }
+    .myNext{
+        left:710px;
+    }
+
+    #contactNote {
+        left: 170px;
+    }
+    #myForm {
+        left:170px;
+    }
+}
+
+@media all and (min-width: 1080px) {
+    #spouses-container {
+        padding-right: 150px;
+    }
+    #remote-rope {
+        left: 900px;
+    }
+    .remote{
+        left: 840px;
+    }
+}
+
+@media all and (min-width: 1180px) {
+    #spouses-container {
+        padding-right: 250px;
+    }
+    #remote-rope {
+        left: 1000px;
+    }
+    .remote{
+        left: 940px;
+    }
+    img.decor {
+        left:-200px;
+    }
+    #guestsNote{
+        left: 420px;
+    }
+
+    #programNote {
+        left: 380px;
+    }
+
+    #photoNote {
+        left: 340px;
+    }
+
+    .carusel{
+        left: 380px;
+    }
+
+    .myPrev{
+        left:270px;
+    }
+    .myNext{
+        left:890px;
+    }
+
+    #contactNote {
+        left: 350px;
+    }
+    #myForm {
+        left:350px;
+    }
+}
+
+@media all and (min-width: 1280px) {
+    #spouses-container {
+        padding-right: 350px;
+    }
+    #remote-rope {
+        left: 1100px;
+    }
+    .remote{
+        left: 1040px;
+    }
+}
+
+#remote-rope {
+    display: none;
+    position: absolute;
+    top: 550px;
+    width: 20px;
+    height: 550px;
+    z-index: 99;
+    background: url(../img/rope-remote.png) 0 0 repeat-y;
+}
+
+.remote{
+    display: none;
+    position: absolute;
+    top: 1050px;
+    width: 141px;
+    height: 272px;
+    z-index: 1000;
+}
+
+.remoteOffOff{
+    background: url(../img/remote/remoteOffOff.png) 0 0 no-repeat;
+}
+
+.remoteOnOff{
+    background: url(../img/remote/remoteOnOff.png) 0 0 no-repeat;
+}
+
+.remoteOffOn{
+    background: url(../img/remote/remoteOffOn.png) 0 0 no-repeat;
+}
+
+#remoteUp {
+    height: 160px;
+    position: relative;
+}
+#remoteDown {
+    height: 112px;
+    position: relative;
+}
+
+img.decor {
+    position: relative;
+    display: block;
+}
+
+#clouds {
+    position: absolute;
+    width: 100%;
+    height: 4700px;
+    background: transparent url(../img/clouds.png) 0 0 repeat-x;
+    top: 0;
+    left: 0;
+    z-index: -99;
+}
+
+#balloons {
+    position: absolute;
+    top: 1450px;
+    left: 5px;
+    width: 261px;
+    height: 451px;
+    background: url(../img/balloons.png) 0 0 no-repeat;
+    z-index: 9999;
+}
+
+#cakes {
+    position: absolute;
+    top: 3600px;
+    left: 50px;
+    width: 547px;
+    height: 273px;
+    background: url(../img/cakes.png) 0 0 no-repeat;
+    z-index: 9999;
+}
+
+#scene, #scene2, #scene3, #scene4{
+    width: 100%;
+    overflow: hidden;
+}
+#scene4 {
+    margin-bottom: 300px;
+}
+
+#guestsNote{
+    position: absolute;
+    top: 425px;
+    z-index: 201;
+}
+
+#programNote {
+    position: absolute;
+    top: 455px;
+    z-index: 201;
+}
+
+#photoNote {
+    position: absolute;
+    top: 450px;
+    z-index: 201;
+}
+
+/*otherwise when no parallax effect on mobile device*/
+.layer {
+    position: relative;
+}
+
+#contactNote {
+    position: absolute;
+    top: 450px;
+    z-index: 201;
+}
+
+#myForm{
+    width:550px;
+    position:absolute;
+    top: 910px;
+}
+
+.success {
+    display: none !important;
+}
+/*slider*/
+.carusel{
+    position: absolute;
+    height: 400px;
+    width: 500px;
+    top: 3180px;
+    z-index: 999;
+}
+.fotorama {
+    position: absolute;
+}
+
+.myPrev, .myNext {
+    position: absolute;
+    width: 100px;
+    height: 550px;
+    top: 2955px;
+    z-index: 999;
+}
+
+/*common*/
+p {
+    text-align: center;
+}
+div.last {
+    padding-top: 150px;
+}
