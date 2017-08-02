@@ -1,2 +1,0 @@
-# wedding-card
-wedding invitationcard
