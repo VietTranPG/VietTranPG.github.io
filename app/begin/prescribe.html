@@ -1,0 +1,45 @@
+<ion-view view-title='<img class="title-image" src="./img/LH-logo-full.png"/>' class="blue-bgr" hide-nav-bar="false" ng-controller="PrescribeCtrl as vm">
+  <ion-content class="has-header">
+    <div class="card-box card-box-positive">
+      <div class="lg-text">
+        E-Prescribe to <br>
+        Local Health
+      </div>
+    </div>
+    <div class="card-box card-box-stable">
+      <div class="lg-text">
+        Show this to your doctor
+      </div>
+      <div class="informatiom">
+        <ul>
+          <li class="text-positive bold">Local Health</li>
+          <li>1616 Chicago Avenue, Chicago, IL 60639</li>
+          <li>Phone: (319) 322-1102</li>
+          <li>Fax: (443) 555-4433</li>
+        </ul>
+      </div>
+    </div>
+    <div class="customize-content-box">
+      <div class="sm-text">
+        Input your phone number and email so we can text you when it’s ready
+      </div>
+      <form name="prescribeForm">
+        <div class="list list-input">
+          <label class=" item-input item-underline">
+            <i class="icon ion-ios-telephone placeholder-icon"></i>
+            <input type="text" placeholder="PHONE" ng-model="vm.phone" required>
+          </label>
+          <label class=" item-input item-underline">
+            <i class="icon ion-android-mail placeholder-icon"></i>
+            <input type="text" placeholder="EMAIL" ng-model="vm.email">
+          </label>
+          <label class=" item-input item-underline">
+            <i class="icon ion-locked"></i>
+            <input type="password" placeholder="PASSWORD" ng-model="vm.password" required>
+          </label>
+        </div>
+        <a type="" class="button button-block button-positive" ng-disabled="prescribeForm.$invalid" ng-click="vm.submitPrescribe()">Done</a>
+      </form>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,40 @@
+
+<ion-view view-title='<img class="title-image" src="./img/LH-logo-full.png"/>' hide-nav-bar="false" ng-controller="takePhotoCtrl as vm">
+  <ion-content>
+    <div class="process-bar">
+      <div class="active"></div>
+      <div class="active"></div>
+      <div></div>
+    </div>
+    <div class="has-bottom-fixed customize-content-box">
+      <div class="lg-text">
+        Take a picture of the<br> medication label
+      </div>
+      <div class="photo-area">
+        <div class="leaf leaf-top-left"></div>
+        <div class="leaf leaf-top-right"></div>
+        <div class="leaf leaf-bottom-right"></div>
+        <div class="leaf leaf-bottom-left"></div>
+        <div class="main-area"></div>
+        <img ng-src="{{vm.photoConvert}}"/>
+      </div>
+      <div class="photo-button">
+        <i class="ion-camera" ng-click="vm.medicationPhoto()"></i>
+      </div>
+      <a type="" class="button button-block button-positive" ng-show="vm.checkPhotoMedication" ng-click="vm.submitMedication()">Submit</a>
+      <div class="bottom-fixed">
+        <div class="simple-text text-center">
+          <a class="text-positive text-underline" ui-sref="core.NoAccTransferPrescription" ng-show="vm.checkPhotoMedication==false">I don’t have my medication</a>
+        </div>
+      </div>
+    </div>
+    <!--<div class="has-bottom-fixed ">
+        <div class="take-picture text-center">
+            <img ng-src="{{photoConvert}}"/>
+        </div>
+        <div class="bottom-fixed">
+          <button class="button button-positive button-block" ng-click="addComplete()">Next</button>
+        </div>
+    </div>-->
+  </ion-content>
+</ion-view>

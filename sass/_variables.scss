@@ -1,0 +1,15 @@
+/*setting color*/
+
+$positiveColor: #11ace2;
+$darkBlue: #3245B8;
+$gray: #b1b1b1;
+$lightGray: #e4e4e5;
+$darkGray: #676f71;
+
+//responsive device
+$breakpoints: (
+  'small': (min-width: 767px),
+  'medium': (min-width: 992px),
+  'large': (min-width: 1200px)
+) !default;
+

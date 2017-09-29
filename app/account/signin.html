@@ -1,0 +1,25 @@
+<ion-view view-title='<img class="title-image" src="./img/logo.png" with="40"/>' hide-nav-bar="false" ng-controller="SigninCtrl as vm">
+  <ion-content has-bouncing="false">
+    <div class="customize-content-box has-bottom-fixed">
+      <div class="lg-text">
+        Welcome back to<br>
+        Local Health
+      </div>
+      <form name="signInForm" class="wrapper" novalidate ng-submit="vm.signin(signInForm.$valid)">
+        <div class="list-input">
+          <label class="item item-input item-underline">
+            <input type="text" ng-model="vm.email" autocomplete="off" placeholder="EMAIL OR MOBILE" required>
+          </label>
+          <label class="item item-input item-underline">
+            <input type="password" ng-model="vm.password" autocomplete="off" placeholder="PASSWORD" required>
+          </label>
+        </div>
+        <button type="submit" class="button button-block button-positive"> Log In </button>
+        <div class="text-center"><a ui-sref = "core.forgotPassword" class="text-positive text-underline">Forgot Password</a></div>
+      </form>
+      <div class="bottom-fixed">
+        <div class="text-center"><a ui-sref = "core.SignUp" class="text-positive text-underline">Create an account</a></div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

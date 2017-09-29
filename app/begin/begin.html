@@ -1,0 +1,85 @@
+<ion-view view-title='<img class="title-image" src="./img/LH-logo-full.png"/>' class="blue-bgr" hide-nav-bar="false" ng-controller="HeaderCoreCtrl as vm" animation="slide-left-right">
+  <ion-content has-bouncing="false">
+    <div class="wrapper-page splash-page has-bottom-fixed">
+      <div class="introduction">
+        <div class="slider-list">
+          <ion-slide-box auto-play="false" class="introduction__slider" on-slide-changed="slideHasChanged($index)">
+            <ion-slide class="item-slider">
+              <div class="image-background">
+                <img src="./img/onboarding-1.png" alt="">
+              </div>
+              <div class="wrapper-content">
+                <div class="lg-text">
+                  Local Health is <br>a new kind of <br> pharmacy.
+                </div>
+                <div class="sm-text">
+                  <ul class="list-unstyle">
+                    <li>We're at your doctor's office.</li>
+                    <li>We're at your home.</li>
+                    <li>We're at your work.</li>
+                  </ul>
+                </div>
+              </div>
+            </ion-slide>
+            <ion-slide class="item-slider">
+              <div class="image-background">
+                <img src="./img/onboarding-2.png" alt="">
+              </div>
+              <div class="wrapper-content">
+                <div class="lg-text">
+                  Free Delivery
+                </div>
+                <div class="sm-text">
+                  <ul class="list-unstyle">
+                    <li>We deliver all your <br> medications at no additional <br> cost in a discreet package.</li>
+                  </ul>
+                </div>
+              </div>
+            </ion-slide>
+            <ion-slide class="item-slider">
+              <div class="image-background">
+                <img src="./img/onboarding-1.png" alt="">
+              </div>
+              <div class="wrapper-content">
+                <div class="lg-text">
+                  Same Copay
+                </div>
+                <div class="sm-text">
+                  <ul class="list-unstyle">
+                    <li>We accept all major health <br> insurance providers and your <br> copay won't change.</li>
+                  </ul>
+                </div>
+              </div>
+            </ion-slide>
+            <ion-slide class="item-slider" ng-swipe-left="vm.goToPage()">
+              <div class="image-background">
+                <img src="./img/onboarding-3.png" alt="">
+              </div>
+              <div class="wrapper-content">
+                <div class="lg-text">
+                  Simple <br> Communication
+                </div>
+                <div class="sm-text">
+                  <ul class="list-unstyle">
+                    <li>Use our app.</li>
+                    <li>Text us.</li>
+                    <li>Call us.</li>
+                    <li>Email us.</li>
+                  </ul>
+                </div>
+              </div>
+            </ion-slide>
+          </ion-slide-box>
+        </div>
+      </div>
+      <div class="bottom-fixed">
+        <div class="wrapper">
+          <a ui-sref="core.BeginEnd" class="button button-block button-positive"> Get started </a>
+          <div class="simple-text text-center">
+            Already have an account? <a ui-sref="core.Login" class="text-positive text-underline">Sign In</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

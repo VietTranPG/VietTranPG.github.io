@@ -1,0 +1,32 @@
+<ion-view view-title='<img class="title-image" src="./img/logo.png" with="40"/>' hide-nav-bar="false" ng-controller="createdAccountCtrl as vm">
+  <ion-content>
+    <div class="wrapper">
+      <div class="welcome-box">
+        <h1 class="box__title">Welcome < {{vm.name}} > </h1>
+        <div class="box__content">
+          <p>Here are your next steps</p>
+          <ul>
+            <li>
+              <i class="ion-android-checkmark-circle text-positive"></i> Chat with us
+            </li>
+            <li>
+              <i class="ion-android-checkmark-circle text-positive"></i> Add prescription
+            </li>
+            <li>
+              <i class="ion-android-checkmark-circle text-positive"></i> Finish your profile
+            </li>
+          </ul>
+        </div>
+        <div class="box__footer">
+          <table>
+            <tr>
+              <td><a href="" class="button button-block button-dark" ui-sref="app.medications">Add prescription</a></td>
+              <td><a href="" ui-sref="app.ChatBox" class="button button-block button-positive">Chat with us</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
+

@@ -1,0 +1,26 @@
+<ion-view view-title="Medications" class="blue-bgr" hide-nav-bar="false" ng-controller="MedicationsCtrl as vm">
+  <ion-content class="has-header">
+    <div class="list-medications">
+      <div class="item-medication" ng-repeat="medication in vm.medications">
+        <div class="item-photo">
+          <div class="photo">
+            <img src="{{medication.image}}" alt="">
+          </div>
+        </div>
+        <div class="item-information">
+          <div class="name">{{medication.drug}}</div>
+          <div class="timetable">{{medication.sig_direction}}</div>
+          <div class="refills">{{medication.status}}</div>
+        </div>
+        <div class="item-actions">
+          <div class="button button-positive button-small button-block">Delivery</div>
+        </div>
+      </div>
+    </div>
+    <div class="add-more text-center">
+      <a href="#/app/add-prescription" class="text-underline text-positive">Add a prescription</a>
+      <!--<a href="" class="text-underline text-positive" ng-click="vm.showCam(1)">Add a prescription</a>-->
+    </div>
+
+  </ion-content>
+</ion-view>

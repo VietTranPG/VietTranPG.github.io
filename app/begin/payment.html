@@ -1,0 +1,41 @@
+<ion-view view-title='<img class="title-image" src="./img/LH-logo-full.png"/>' class="blue-bgr" hide-nav-bar="false" ng-controller="PaymentCtrl as vm">
+  <ion-content class="has-header">
+    <div class="process-bar">
+      <div class="active"></div>
+      <div class="active"></div>
+      <div class="active"></div>
+    </div>
+    <div class="customize-content-box">
+      <div class="lg-text">
+        Last thing, we need <br>Payment info.
+      </div>
+      <div class="mg-bottom-50">
+        <a type="" class="button button-block button-positive" ng-click="vm.takePhoto()" >Take a picture of your card</a>
+      </div>
+      <p>Or input your information</p>
+      <form action="">
+        <div class="list list-input">
+          <label class="item-input item-underline">
+            <input type="text" placeholder="CARD NUMBER" ng-model="vm.card_number">
+          </label>
+          <!-- <label class="item-input item-underline">
+            <input type="text" placeholder="EXPIRATION" ion-datetime-picker only-valid="{'after': vm.today}" date ng-model="vm.expiration" ng-required="true" value="{{vm.expiration}}">
+          </label> -->
+          <div class="item-input item-underline" ion-datetime-picker only-valid="{'after': vm.today}" date ng-model="vm.expiration" ng-required="true">
+            <input type="text" placeholder="EXPIRATION" ng-if="!vm.expiration">
+            <span>{{vm.expiration| date: "yyyy-MM-dd"}}</span>
+          </div>
+          <label class="item-input item-underline">
+            <input type="text" placeholder="CVC" ng-model="vm.cvc">
+          </label>
+        </div>
+        <a type="" class="button button-block button-positive" ng-click="vm.submitPayment()">Submit</a>
+        <div class="bottom-fixed">
+          <div class="simple-text text-center">
+            <a class="text-positive text-underline" ui-sref="app.medications">I don't have payment</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </ion-content>
+</ion-view>

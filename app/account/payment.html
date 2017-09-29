@@ -1,0 +1,26 @@
+<ion-view view-title='Add Payment Info' hide-nav-bar="false" ng-controller="PaymentCtrl as vm">
+  <ion-content>
+    <form class="wrapper padding-normal setting-form" name="paymentForm">
+      <div class="text-center">
+        <h2 class="lg-text">Add a credit card</h2>
+        <p class="padding-normal">
+          You'll pay the <strong class="dark">same price</strong> you're used to at your location pharmacy for medications not fully covered by your insurance. <br>
+          Delivery is always <strong class="dark">free</strong>!
+        </p>
+      </div>
+      <div class="list-form">
+        <label class="item item-input">
+          <i class="icon ion-card placeholder-icon"></i>
+          <input type="text" required placeholder="1234 5678 1234 5678" ng-model="vm.credit_card" required>
+        </label>
+      </div>
+      <div class="text-center padding-normal">
+        <a href="" class="positive" ng-click="vm.takePhoto()">Take picture of card</a>
+      </div>
+      <!-- <div class="bottom-fixed">
+          <a href="#" class="button button-block button-positive text-uppercase" ng-click="vm.paymentInfo()">Next</a>
+        </div> -->
+      <a class="button button-block button-positive" ui-sref="core.allergies" ng-disabled="paymentForm.$invalid" ng-click="vm.paymentInfo()">Next</a>
+    </form>
+  </ion-content>
+</ion-view>

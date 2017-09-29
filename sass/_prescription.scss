@@ -1,0 +1,62 @@
+.normal-content-box {
+  padding: 30px 15px;
+  .lg-text {
+    color: $darkGray;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 30px;
+    line-height: 1.1;
+  }
+  .md-text {
+    font-size: 16px;
+    color: $darkGray;
+    margin-bottom: 10px;
+  }
+  .group-radios {
+    margin-bottom: 25px;
+    .button-radio {
+      width: 100px;
+    }
+  }
+  .sm-text {
+    font-weight: bold;
+    color: $darkGray;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.has-header {
+  .has-bottom-fixed {
+    min-height: calc(100vh - 44px);
+    min-height: -moz-calc(100vh - 44px);
+  }
+}
+
+.has-bottom-fixed {
+  position: relative;
+  padding-bottom: 100px;
+  .bottom-fixed {
+    position: absolute;
+    bottom: 0;
+    min-height: 100px;
+    left: 0;
+  }
+}
+
+.normal-text {
+  white-space: normal;
+  overflow: auto;
+}
+
+.list {
+  a.item {
+    color: #444;
+  }
+  .item-icon-right, .item-icon-left {
+    .icon {
+      font-size: 24px;
+    }
+  }
+}

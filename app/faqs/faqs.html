@@ -1,0 +1,17 @@
+<ion-view view-title="FAQs" class="blue-bgr" hide-nav-bar="false" ng-controller="FaqCtrl as vm">
+  <ion-content>
+    <ion-list class="list-faqs">
+      <div ng-repeat="group in groups" class="card">
+        <ion-item class="item-light item-icon-right"
+                  ng-click="toggleGroup(group)"
+                  ng-class="{active: isGroupShown(group)}">
+          Group {{group.name}}
+          <i class="icon" ng-class="isGroupShown(group) ? 'ion-chevron-up' : 'ion-chevron-down'"></i>
+        </ion-item>
+        <ion-item class="item-accordion item-text-wrap"    ng-show="isGroupShown(group)">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchan
+        </ion-item>
+      </div>
+    </ion-list>
+  </ion-content>
+</ion-view>

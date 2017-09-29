@@ -1,0 +1,35 @@
+<ion-view view-title='Add Insurance Info' hide-nav-bar="false" ng-controller="InsuranceInformationCtrl as vm">
+  <ion-content>
+    <form class="wrapper padding-normal setting-form has-bottom-fixed" name="insuranceInfoForm">
+      <div class="list-form">
+        <label class="item item-input">
+          <i class="icon fa fa-circle-thin placeholder-icon"></i>
+          <input type="text" required placeholder="Provider" ng-model="vm.insuranceInfo.provider" required>
+        </label>
+        <label class="item item-input">
+          <i class="icon fa fa-circle-thin placeholder-icon"></i>
+          <input type="text" required placeholder="Name" ng-model="vm.insuranceInfo.name" required>
+        </label>
+        <label class="item item-input">
+          <i class="icon fa fa-circle-thin placeholder-icon"></i>
+          <input type="text" required placeholder="ID" ng-model="vm.insuranceInfo.id" required>
+        </label>
+        <label class="item item-input">
+          <i class="icon fa fa-circle-thin placeholder-icon"></i>
+          <input type="text" placeholder="Group" ng-model="vm.insuranceInfo.group" required>
+        </label>
+        <label class="item item-input">
+          <i class="icon fa fa-circle-thin placeholder-icon"></i>
+          <input type="text" placeholder="BIN" ng-model="vm.insuranceInfo.bin" required>
+        </label>
+        <label class="item item-input">
+          <i class="icon fa fa-circle-thin placeholder-icon"></i>
+          <input type="text" placeholder="PCN" ng-model="vm.insuranceInfo.pcn" required>
+        </label>
+      </div>
+      <div class="bottom-fixed">
+        <button type="" class="button button-block button-positive" ui-sref="core.Payment" ng-disabled="insuranceInfoForm.$invalid" ng-click="vm.setInsuranceFunc()">Next</button>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>
